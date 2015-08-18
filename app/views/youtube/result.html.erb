@@ -1,0 +1,13 @@
+<h1>検索結果</h1>
+<table>
+    <tbody>
+　　    <% @results.each do |result| %>
+    <tr>
+        <td><a href="https://youtube.com<%= result["link"] %>"><img src="<%= result["image"] %>" /></a><br />
+            <a href="https://youtube.com<%= result["link"] %>"><%= result["text"] %></a></td>
+    </tr>
+<% end %>
+<%= link_to 'Topに戻る', root_path %>
+</tbody>
+</table>
+

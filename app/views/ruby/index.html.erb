@@ -1,0 +1,12 @@
+<h2>Contents</h2>
+<% @results.each.with_index(0) do |result, index| %>
+    <% if index == 10 %>
+      <% break %>
+    <% end %>
+    
+    <a href="<%= result[:link] %>"><img src="<%= result[:img] %>" /></a>
+    <p><a href="<%= result[:link] %>"><%= result[:title] %></a></p>
+   
+<% end %>
+
+

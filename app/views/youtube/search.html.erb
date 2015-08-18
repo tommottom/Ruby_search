@@ -1,0 +1,9 @@
+<h1>Top Page</h1>
+<p>検索したい言葉を入れる(1-50まで)</p>
+<%= form_tag('/result') do %> 
+<%= text_field_tag 'query' %>
+<%= submit_tag("検索")%>
+<% end %>
+
+
+
